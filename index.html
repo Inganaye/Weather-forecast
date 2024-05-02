@@ -1,28 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather Application</title>
-  </head>
-  <body>
-    <header>
-      <form>
-        <input type="search" placeholder="Enter a city..." required />
-        <input type="submit" value="Search" />
-      </form>
-    </header>
-    <h1>Pretoria</h1>
-    <div>
-      <p>
-        Thursday 13:00 Sunny <br />Precipitation: 0% <br />Humidity: 21%
-        <br />Wind: 13 km/h
-      </p>
-    </div>
-    <div>☀️27°C</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
+    <title>My Weather App</title>
+<body>
+    <div class="weather-app">
+      <header>
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city">Pretoria</h1>
+            <p class="weather-app-details">
+              Thursday 14:40, sunny
+              <br />
+              Humidity: <strong>21%</strong>, Wind: <strong>13km/h</strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature-container">
+            <div class="weather-app-icon">☀️</div>
+            <div class="weather-app-temperature">27</div>
+            <div class="weatehr-app-unit">°C</div>
+          </div>
+        </div>
+      </main>
   </body>
   <footer>
-    Coded by
+    This project was coded by
     <a href="https://github.com/Inganaye/" target="blank">Inga Twalani</a> code
     hosted on
     <a href="https://github.com/Inganaye/Weather-forecast" target="blank"
@@ -36,4 +51,5 @@
       Netlify</a
     >
   </footer>
+  </div>
 </html>
